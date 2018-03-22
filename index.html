@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Sublime Project</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+		   <h1>Monk's Cafe!</h1>
+		   <h3>"The Coffee Shop"</h3>
+		   <img src="images/toms-restaurant.jpg" alt="Tom's Restaurant" />
+		</div>
+		<div class="reservations">
+			<div class="make-a-reservation">
+				<h3>Make A Reservation</h3>
+				<form id="makeReservation">
+					<input type="text" placeholder="Name" />
+					<input type="date" placeholder="Day" />
+					<button type="submit">Confirm Reservation</button>
+				</form>
+			</div>
+			<div class="existing-reservations">
+				<h3>Existing Reservations</h3>
+				<table>
+					<thead>
+						<th>Name</th>
+						<th>Day</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Your Name</td>
+							<td>Your reservation date</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="dine-with-us">
+			<h2>Come Dine With Us</h2>
+			<div id="map"></div>
+		</div>
+		<div id="reviews">
+			<img src="images/jerry.jpg" alt="Jerry Seinfeld" />
+			<ul class="reviews">
+				<li class="review">
+					<p>"Big lettuce, big carrots, tomatoes like volleyballs."<br />
+						<span class="author">- Jerry Seinfeld, on The BIG Salad</span></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAedMm_E7dW8zOBQUco6R6kfYk7bWx_7go&callback=initMap" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
